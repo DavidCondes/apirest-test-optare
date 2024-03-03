@@ -11,7 +11,7 @@
 	<groupId>com.optare</groupId>
 	<artifactId>technical-test</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 	<name>technical-test</name>
 	<description>Technical test for optare</description>
 	<properties>
@@ -52,6 +52,9 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<version>${project.parent.version}</version>
+				<configuration>
+					<executable>true</executable>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
